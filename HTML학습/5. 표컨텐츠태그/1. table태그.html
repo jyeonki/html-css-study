@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 7px;
+        }
+        th {
+            background: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <table> <!-- 3X4 표 만들기--> <!--table>tr*3>td*4 치고 enter키 or Tab키 -->
+        <tr>
+            <th colspan="5">* 인적사항 </th>
+            <!-- 열 5개를 점유해라 -->
+        </tr>
+        <tr> <!-- tr>th*4 치고 enter키 or Tab키 -->
+            <th>이름</th>  <!--table header-->
+            <th>나이</th>
+            <th>주소</th>
+            <th>성별</th>
+            <th>특이사항</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>30세</td>
+            <td>서울시</td>
+            <td>남성</td>
+            <td rowspan="3">X</td>
+            <!-- 행이 3개인 것 처럼 확장해라 -->
+        </tr>
+        <tr>
+            <td>박영희</td>
+            <td>31세</td>
+            <td>경기도</td>
+            <td>여성</td>
+        </tr>
+        <tr>
+            <td>김철수</td>
+            <td>41세</td>
+            <td>제주도</td>
+            <td>남성</td>
+        </tr>
+            
+
+    </table>
+
+
+
+
+
+</body>
+</html>

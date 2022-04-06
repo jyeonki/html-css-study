@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="https://search.naver.com/search.naver">
+        <!-- 
+            절대경로: 사이트 주소 통째로 적는거, 다른 사람 사이트 쓸 때
+            상대경로: ../ 같은 걸 이용해서 내꺼로 이동하는 거
+         -->
+        <input type="text" name="query" >
+        <button type="submit" >검색</button>
+
+    </form>
+
+    <!--
+    <form action="https://google.co.kr/search">
+        
+        <input type="text" name="q" >
+        <button type="submit" >검색</button>
+
+    </form>
+    -->   
+
+    <br><br><br><br>
+
+    <form action="https://nid.naver.com/nidlogin.login" method="post">
+        <!-- method="get" 은 따로 안 써줘도 됨(기본설정) -->
+        <input type="text" name="id"> <br> 
+        <!-- 서버에 id = 입력한 내용 이렇게 넘어감 -->
+        <input type="password" name="pw"> <br>
+        <button type="submit" >로그인</button>
+    </form>
+
+
+</body>
+</html>

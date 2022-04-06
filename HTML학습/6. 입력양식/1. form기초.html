@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/login" method="post" autocomplete="off" novalidate>
+        <!-- 
+            action - 전송할 정보를 처리할 url 
+            
+            method="get" 기본방식 ->url에 있다
+            method="post" 보안(로그인 같은?)  
+            예시) www.naver.com/login (/앞부분은 ip, 도메인 /뒷부분은 url)
+
+            autocomplete="off" 아이디 칠 때 미리보기 뜨는 거 끄기(기본설정은 on)
+
+            novalidate 자동검증을 꺼라
+            예시)  <input name="id" type="email" placeholder="아이디를 입력하세요." >
+            창에 email양식이 아닌 일반적인 아이디를 쳤을 때 '이메일 양식이 아닙니다'같은 검증을 안뜨게 하고 싶을 때 
+            novalidate 를 쓴다
+        -->
+        <input name="id" type="email" placeholder="아이디를 입력하세요." > <br>
+        <input name="pw" type="password" placeholder="비밀번호를 입력하세요." > <br>
+        <button type="submit">로그인</button>
+
+    </form>
+
+
+
+
+
+
+</body>
+</html>
