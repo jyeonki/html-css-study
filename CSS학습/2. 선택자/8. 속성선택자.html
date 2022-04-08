@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+        /* 속성은 대괄호 [] */
+        [type=password] {
+            color: red;
+            width: 100px;
+        }
+        /* type 속성이 password */
+
+        [disabled] {
+            /* 투명도 80% */
+            opacity: 0.8;
+            font-size: 0.8em;
+        }
+
+        /* ^: 시작, $: 끝 (잘 안씀)*/
+
+        button[class^='btn'] {
+            /* 모서리를 둥글게 */
+            border-radius: 20px;
+        }
+        /* button인데 class속성의 시작이 btn */
+
+        button[class$='ss'] {
+            background: yellowgreen;
+        }
+
+        /* 선택자에는 ( ) 수식이 없다 */
+    </style>
+
+
+
+
+
+</head>
+<body>
+    
+    <input type="text" value="hello">
+    <input type="password" value="1234">
+    <input type="text" value="작성 불가!" disabled>
+
+    <select>
+        <option>감자</option>
+        <option disabled>고구마</option>
+        <option>버섯</option>
+    </select>
+
+    <br>
+
+    <button>Normal</button>
+    <button class="btn-success">Success</button>
+    <button class="btn-danger">Danger</button>
+
+    
+
+</body>
+</html>

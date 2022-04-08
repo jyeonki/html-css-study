@@ -1,0 +1,9 @@
+
+@import url('./side.css');
+
+h1 {
+    font-size: 20px; /* fz20치고 Tab키 */
+    font-weight: normal; /* fw */
+    font-family: fantasy; /* ff */
+    color: blue; /* c */
+}

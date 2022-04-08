@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        li.orang {
+            color: orange;
+        }
+        span.orang {
+            background: orange;
+        }
+        div#apple {
+            background: red;
+        }
+        /* 에러 apple은 div가 아닌 li 안에 있다 */
+
+        h1.yellow.low.primary#change{
+            background: yellow;
+        }
+        /* 문제없음, class fruits가 더 있지만 나머지 조건을 충족하므로  */
+
+        aside.banner.image#roll {
+            border: 1px solid red;
+            width: 50px;
+            height: 80px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- div>(ul>li*3)+div+p+span -->
+    <div class="shadow">
+        <ul>
+            <li id="apple">사과</li>
+            <li class="reverse">딸기</li>
+            <li class="orang reverse" id="big">오렌지</li>
+            <!-- class 추가는 띄어쓰기로 구분 -->
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orang">오렌지</span>
+
+        <h1 id="change" class="fruits yellow low primary">파인애플</h1>
+        <!-- id가 있다면 특정할 때 id를 활용하는게 좋다 -->
+
+        <aside class="banner image" id="roll"></aside>
+
+       
+
+    </div>
+
+</body>
+</html>

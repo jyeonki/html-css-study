@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* hover: 요소에 마우스를 올렸을 때 */
+        a:hover {
+            font-size: red;
+            font-weight: bold;
+            color: red;
+        }
+        /* 마우스를 올렸을 때 스타일이 적용 */
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            /* 애니메이션 속도 조절 */
+            transition: 0.7s;
+        }
+        .box:hover {
+            width: 200px;
+        }
+
+        /* active: 요소에 마우스를 누르고 있을 때 */
+        .box:active {
+            height: 200px;
+            background: yellowgreen;;
+        }
+
+        #common {
+            width: 100px;
+            border: 1px solid gray; /* bd tab키 */
+            outline: none;
+            padding: 5px 10px;
+            margin-top: 20px;
+            transition: 0.6s;
+        }
+        /* focus: 특정 요소에 포커싱(탬, 클릭)했을 때 */
+        #common:focus {
+            border-color: red;
+            width: 200px;
+        }
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <a href="#">hello</a>
+    
+    <div class="box"></div> <!-- div.box 치고 Tab키 -->
+    <!-- div는 .box라고 쳐도 가능 -->
+
+    <input type="text" id="common">
+
+</body>
+</html>

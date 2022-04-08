@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .orang {
+            color: orange;
+        }
+        /*  클래스 orang은 글자 색깔이 orange다, .을 붙이고 클래스 이름을 써준다 */
+    
+        #big {
+            font-size: 1.5em; /* 1.5em 1.5배 */
+        }
+        /*  class는 . id는 # */
+
+        .reverse {
+            transform: rotate(180deg); /* 글자를 180도 뒤집어라 */
+            width: fit-content;
+        }
+        /* 먼저 스타일을 추가하고(나중에 추가하고 싶을지도 모르니까) 
+        body에 클래스를 나중에 추가해도 된다 */
+
+        .shadow {
+            text-shadow: 3px 3px 5px #333;
+        }
+
+        p, span {
+            font-style: italic;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            font-weight: normal;
+        }
+
+        .orang, #big {
+            font-style: italic;
+        }
+    
+
+        /* class(.)를 적지 않고, 태그를 바로 하는 실수하지 않기 */
+
+    </style>
+
+</head>
+<body>
+
+    <!-- div>(ul>li*3)+div+p+span -->
+    <div class="shadow">
+        <ul>
+            <li>사과</li>
+            <li class="reverse">딸기</li>
+            <li class="orang reverse" id="big">오렌지</li>
+            <!-- class 추가는 띄어쓰기로 구분 -->
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orang">오렌지</span>
+
+
+
+        <!-- 
+        h1.reverse#small치고 Tab키
+        <h1 class="reverse" id="small">파인애플</h1>
+        h2.shadow.reverse
+        <h2 class="shadow reverse">망고</h2> 
+        -->
+
+
+    </div>
+
+</body>
+</html>
