@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +10,64 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
     <style>
-        h1{
+        h1 {
+            font-size: 2em;
             font-weight: bold;
+            margin: 20px;
         }
-        .parent 
-
-
+        .menu {
+            background: lightgray;
+            width: 80%;
+            margin-left: 10px;
+            padding: 10px;
+            
+        }
+        .menu h2 {
+            font-size: 1.2em;
+            margin: 20px 0;
+            padding: 8px;
+            width: fit-content; 
+            /* 원래 가로는 100%, 이걸 설정함녀 fit에 맞게 수정 */
+        }
+        .menu h2 a {
+            color: #fff;
+            font-weight: bold;
+            /* a태그의 밑줄 제거, 링크 밑에 줄 없애기 */
+            text-decoration: none;
+            
+            /* x축그림자길이 y축 길이 블러효과크기 색상 */
+            text-shadow: 2px 2px 10px #000;
+            padding: 10px;
+        }
+        .menu h2 a:hover {
+            background: skyblue;
+            color: yellow;
+        }
+        
     </style>
 </head>
+
 <body>
     <h1>메뉴 만들기</h1>
-     <div class="parent">
-         <div class="child">[주문] 긴급재난지원금을 쿠X에서 사용할 수 있나요?</div>
-         <div class="child">다슬기를 키우고 싶은데 어떤 환경이 필요한가요?</div>
-         <div class="child">달팽이가 집을 나갔습니다. 어떻게 하죠?</div>
-     </div>
+    <!-- <div class="parent">
+        <div class="child">[주문] 긴급재난지원금을 쿠X에서 사용할 수 있나요?</div>
+        <div class="child">다슬기를 키우고 싶은데 어떤 환경이 필요한가요?</div>
+        <div class="child">달팽이가 집을 나갔습니다. 어떻게 하죠?</div>
+    </div> -->
 
 
+    <section class="menu">
+        <h2>
+            <a href="#">[주문] 긴급재난지원금을 쿠X에서 사용할 수 있나요?</a>
+        </h2>
+        <h2>
+            <a href="#">다슬기를 키우고 싶은데 어떤 환경이 필요한가요?</a>
+        </h2>
+        <h2>
+            <a href="#">달팽이가 집을 나갔습니다. 어떻게 하죠?</a>
+        </h2>
+    </section>
 
 </body>
+
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 550px;
+            height: 350px;
+            border: 4px dashed gray;
+
+            background-color: orange;
+            background-image: url('../img/sky.jpg');
+            background-size: 150px 150px;
+            background-repeat: no-repeat;
+            /* 기본값은 repeat */
+            
+            /* background-position: right center; */
+            /* x축 y축 */
+            background-position: 400px 150px;
+            /* 0% 0%: 좌측 상단 100% 100%: 우측 하단*/
+
+            background: orange no-repeat url('../img/sky.jpg') 400px 150px / 150px 150px;
+            /* 위치랑 크기빼고(/로 구분 위치 / 크기) 나머지 나열순서는 상관없음 */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>
