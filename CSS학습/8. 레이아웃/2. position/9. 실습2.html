@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 800px;
+            border: 1px solid gray;
+        }
+        section ul {
+            float: left;
+            width: 30%;
+            background: tomato;
+        }
+        section ul li {
+
+
+        }
+        section .box1{
+            width: 70px;
+            border: 1px solid #000;
+            background: lightgray;
+        }
+        section .box2 {
+            clear: both;
+        }
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <section class="clearfix">
+        <ul>
+            <li>COMPANY</li>
+            <li>PRODUCT</li>
+            <li>SERVICE</li>
+            <li>COMMUNITY</li>
+        </ul>
+        <div class="box1"></div>
+        <div class="box2">Copyright Allright Reserved.</div>
+    </section>
+</body>
+</html>

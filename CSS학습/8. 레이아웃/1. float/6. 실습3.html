@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .gnb {
+            float: left;
+        }
+        .tnb {
+            float: right;
+        }
+        ul li {
+            float: left;
+        }
+        a {
+            font-weight: 700;
+            text-decoration: none;
+            padding: 15px;
+        }
+        a:hover {
+            color: orange;
+            border-bottom: 3px solid red;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav>(ul.gnb>li*5>a)+(ul.tnb>li*3>a) -->
+    <nav class="clearfix">
+        <ul class="gnb">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BOARD</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+        </ul>
+        <ul class="tnb">
+            <li><a href="#">검색</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
