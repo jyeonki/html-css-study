@@ -1,0 +1,112 @@
+
+/* common style */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+body {
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: '고딕', Gothic, sans-serif;
+    background: #666;
+}
+#wrapper {
+    background: #fff;
+    width: 50%;
+    /* 가운데 맞추기 */
+    margin: 0 auto;
+}
+
+/* header style */
+header {
+    background: orange;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+header h1 {
+    font-size: 5em;
+}
+header h2 {
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+h4 {
+    background: #aaa;
+    /* text-align: center; */
+}
+.menu {
+    background: #fff;
+    float: left;
+    width: 25%;
+    font-weight: 700;
+}
+.menu h2 {
+    background: darkred;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px;
+}
+.menu ul {
+    padding: 10px;
+}
+.menu ul li a {
+    color: #000;
+}
+.main-container {
+    background: #ccc;
+    float: left;
+    width: 50%;
+    color: #123456;
+}
+.main-container .box h2 {
+    background: #123456;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 10px;
+    text-align: left;
+}
+.main-container .box h3 {
+    background: #ccc;
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: 700;
+
+}
+.main-container .box p {
+    padding: 10px;
+}
+.content {
+    background: #fff;
+    float: right;
+    width: 25%;
+    font-size: 1.5em;
+}
+.content h3 span,
+.content em,
+.content strong{
+    display: block;
+}
+.content span {
+    color: lightgray;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.content em {
+    color: orange;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.content strong {
+    font-weight: 700;    
+}
+
+footer {
+    background: #123456;
+}
+footer address {
+    color: #fff;
+}

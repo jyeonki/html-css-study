@@ -1,0 +1,172 @@
+
+@import url('common.css');
+
+/* common style */
+a {
+    text-decoration: none;
+    /* 부모에게 상속받은 글자색을 사용한다 */
+    color: inherit;
+}
+/* reset.css에 a태그 reset이 안걸려있어서 따로 걸어줌 */
+body {
+    font-size: 13px;
+    font-family: 'NGothic', Arial, sans-serif;
+    background: #aaa;
+}
+#wrapper {
+    width: 60%;
+    background: #fff;
+    /* 가운데로 옮김 */
+    margin: 0 auto;
+}
+
+/* header style */
+header {
+    background: #fa0;
+    color: #fff;
+    text-align: center;
+}
+header h1 {
+    font-size: 8em;
+    font-weight: 700;
+    padding: 10px;
+}
+header h1 span {
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+}
+header .stit {
+    background: #ccc;
+    color: #333;
+    padding: 5px 0;
+}
+
+/* container style */
+/* > .side-menu */
+.container .side-menu {
+    /* background: tomato; */
+    width: 25%;
+    float: left;
+}
+.container .side-menu h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #fff;
+    background: #900;
+    padding: 10px;
+}
+.container .side-menu ul {
+    margin-top: 5px;
+}
+.container .side-menu ul li {
+    padding: 10px;
+}
+.container.side-menu ul li a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+.container.side-menu ul li a:hover {
+    border: 1px dashed #000;
+}
+/* > .main-content */
+.container .main-content {
+    background: #ddd;
+    width: 50%;
+    float: left;
+    color: #123456;
+}
+.container .main-content .art-piece {
+    /* background: orange; */
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 10px;
+}
+.container .main-content .art-piece .title {
+    color: #ddd;
+    background: #123456;
+    padding: 7px 5px;
+}
+.container .main-content .art-piece .title a{
+    /* background: red; */
+    /* 
+    block으로 바꾸는 순간 width 자동 100%,
+    a는 인라인라서 텍스트부분만 클릭이 가능,
+    사용자 편의성을 위해 클릭 부분을 넓혀준다
+    diplay:block;으로 
+    */
+    display: block;
+}
+.container .main-content .art-piece .title a:hover {
+    color: #ee0;
+}
+.container .main-content .art-piece .artist {
+    margin: 20px 0;
+}
+.container .main-content .art-piece .detail {
+    font-size: 0.7em;
+    font-weight: 400;
+    /* 부모인 art-piece가 볼드체 700 */
+}
+
+/* > .banner */
+.container .banner {
+    /* background: aqua; */
+    width: 25%;
+    float: left;
+    font-weight: 700;
+}
+.container .banner h3 {
+    font-size: 1.7em;
+    color: #333;
+    padding: 20px 10px;
+}
+.container .banner h3 span,
+.container .banner h3 strong {
+    display: block;
+    margin-bottom: 10px;
+}
+.container .banner h3 span {
+    text-decoration: underline;
+}
+.container .banner h3 .all {
+    color: #999;
+}
+.container .banner h3 .love {
+    color: #fa0;
+}
+.container .banner .link {
+    /* background: tomato; */
+    padding: 0 10px;
+}
+.container .banner .link li {
+    margin-bottom: 15px;
+}
+.container .banner .link li a {
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    /* 
+    텍스트만큼만 가로길이를 가지겠다
+    바탕이 하얀색이라서 버튼클릭부분이 겹친다
+    텍스트부분만 누를 수 있게 
+    */
+    width: fit-content;
+    /* background: red; */
+}
+.container .banner .link li span {
+    font-weight: 400;
+}
+
+/* footer style */
+footer {
+    background: #123456;
+    padding: 10px;
+    font-weight: 700;
+    color: #eee;
+    text-align: center;
+}
+footer a {
+    text-decoration: underline;
+}
